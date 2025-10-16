@@ -38,7 +38,7 @@ public class HREasyJavaStdinAndStdout2 {
         try(Scanner scan = new Scanner(System.in)){
             int intNumber = scan.nextInt();
             double doubleNumber = scan.nextDouble();
-            scan.nextLine(); //Bu kısım tampon belleği temizlemek için eklendi. 
+            scan.nextLine(); //This section has been added to clear the buffer.
             String text = scan.nextLine();
             
             System.out.println("String: " + text);
