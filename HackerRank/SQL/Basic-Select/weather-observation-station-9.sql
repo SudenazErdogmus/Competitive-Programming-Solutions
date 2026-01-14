@@ -8,8 +8,19 @@ LINK: https://www.hackerrank.com/challenges/weather-observation-station-9/proble
 PROBLEM DESCRIPTION:
 Query the list of CITY names from STATION that do not start with vowels. Your result cannot contain duplicates.
 
-SOLUTION APPROACH:
-
+SOL1. Used SELECT DISTINCT to retrieve unique CITY names (excluding duplicates) from the STATION table as requested.
+2. Filtered the records using WHERE clause with one condition:
+   - Used the LIKE operator with T-SQL brackets ([]).
+   - This checks if the name doesn't start with a vowel in a simple way.
 */
 
 SELECT DISTINCT CITY FROM STATION
+WHERE CITY NOT LIKE '[aeiou]%';
+
+/*
+ALTERNATIFE SOLUTION:
+SELECT DISTINCT CITY FROM STATION
+WHERE CITY LIKE '[^aeiou]%';
+*/
+
+
