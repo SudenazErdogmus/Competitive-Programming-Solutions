@@ -13,7 +13,7 @@
   Print Weird if the number is weird; otherwise, print Not Weird.*/
 
 import java.util.Scanner;
-public class HREasyJavaIfElse {
+public class JavaIfElse {
 
     public static void main(String[] args) {
         try(Scanner scan = new Scanner(System.in)){
